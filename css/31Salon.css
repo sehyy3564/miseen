@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@font-face {
+    font-family: 'NanumSquare';
+    src: local('font/NanumSquare'),
+        url('../font/NanumSquareR.ttf'),
+        url('../font/NanumSquareR.eot'),
+        url('../font/NanumSquareR.woff');
+}
+@font-face {
+    font-family: 'NanumSquareL';
+    src: url('../font/NanumSquareL.ttf'),
+        url('../font/NanumSquareL.eot'),
+        url('../font/NanumSquareL.woff');
+}
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('../font/NanumSquareB.ttf'),
+        url('../font/NanumSquareB.eot'),
+        url('../font/NanumSquareB.woff');
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url('../font/NanumSquareEB.ttf'),
+        url('../font/NanumSquareEB.eot'),
+        url('../font/NanumSquareEB.woff');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+
+#location {
+    line-height: 50px;
+    padding-left: 5%;
+    word-spacing: 5px;
+    border-bottom: 1px solid #1c1c1b;
+}
+
+
+figure {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    background: url(../images/31salon_bg.png) no-repeat;
+    background-size: cover;
+}
+figure > .figure_text {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 220px;
+    letter-spacing: 1px;
+}
+
+
+section {
+    max-width: 1024px;
+    margin: 80px auto 0 auto;
+    position: relative;
+}
+article {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+article > h3 {
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #fff;
+    width: 200px;
+    margin: 0 auto;
+}
+article > h3:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -50;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25px;
+    background: #bbb;
+    width: 100%;
+    height: 1px;
+}
+article:nth-child(2) > h3 {
+    width: 300px;
+}
+article > p {
+    font-family: "NanumSquareB";
+    font-size: 15px;
+    text-align: center;
+    color: #787878;
+}
+
+article:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+article > .box {
+    width: 32%;
+    height: 440px;
+    border: 1px solid #bbb;
+    float: left;
+    margin-top: 50px;
+    margin-right: 2%;
+}
+article > .three {
+    margin-right: 0;
+}
+article > .six {
+    margin-right: 0;
+}
+
+.box > .img {
+    overflow: hidden;
+    position: relative;
+}
+.episode > .box > .img:before {
+    font-family: "NanumSquareB";
+    text-align: center;
+    content: '1';
+    font-size: 28px;
+    padding-top: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 37px;
+    background: #00b050;
+    color:#fff;
+}
+.episode > .two > .img:before {
+    content: '2';
+    background: #f98a6c;
+}
+.episode > .three > .img:before {
+    content: '3';
+    background: #a774c1;
+}
+.box > .text {
+    padding: 20px;
+    font-family: "NanumSquare";
+}
+.box > .text > span {
+    font-family: "NanumSquareEB";
+    font-size: 23px;
+    letter-spacing: -1px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #787878;
+}
+.box > .text > p {
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 10px;
+}
